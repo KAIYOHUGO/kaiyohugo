@@ -1,0 +1,42 @@
+/*social btn*/
+.btn-social .btn {
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-ig {
+  background: #833ab4;
+}
+.btn-so {
+  background-color: #ff9900;
+}
+.btn-dc {
+  background-color: #738adb;
+}
+.btn-tw {
+  background-color: #1da1f2;
+}
+.btn-st {
+  background-color: #2a475e;
+}
+.btn-fb {
+  background-color: #3b5998;
+}
+.anchor {
+  padding-top: 5rem;
+  margin-top: -5rem;
+}
+#top {
+  padding-top: 2rem;
+}
+#main {
+  background: black;
+  background: linear-gradient(
+    191deg,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(45, 45, 45, 1) 100%
+  );
+  background-attachment: fixed;
+}
