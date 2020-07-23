@@ -1,4 +1,5 @@
 var id = document.location.hash.replace("#article", "");
+var href = document.location.href;
 
 var md = window.markdownit({
   html: true,
@@ -16,6 +17,7 @@ var md = window.markdownit({
 
 //load
 $(function() {
+  coin();
   $.get("articles/" + id + ".md", function(data) {
     var result = md.render(data);
     $("#article").html(result);
@@ -23,3 +25,11 @@ $(function() {
     document.location.pathname = "/404.html";
   });
 });
+//coin
+function coin() {
+  $("#likecoin").html(
+    '<div class="likecoin-embed likecoin-button" data-liker-id="ky-mc-minecraft" data-href="' +
+      href +
+      '"></div>'
+  );
+}
