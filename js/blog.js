@@ -1,9 +1,8 @@
 var id = document.location.hash.replace("#article", "");
 
-var hljs = require("highlight.js");
-// Actual default values
-var md = require("markdown-it")({
+var md = window.markdownit({
   html: true,
+  linkify: true,
   typographer: true,
   highlight: function(str, lang) {
     if (lang && hljs.getLanguage(lang)) {
@@ -11,7 +10,7 @@ var md = require("markdown-it")({
         return hljs.highlight(lang, str).value;
       } catch (__) {}
     }
-    return ""; // use external default escaping
+    return "";
   }
 });
 
