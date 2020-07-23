@@ -36,6 +36,11 @@
   },
   {
     "type": "js",
+    "file": "https://static.like.co/sdk/v1/button.js",
+    "integrity": ""
+  },
+  {
+    "type": "js",
     "file": "js/main.js",
     "integrity": ""
   }

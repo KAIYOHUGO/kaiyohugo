@@ -1,6 +1,9 @@
 var ldel = "head";
+var href = document.location.href;
+
 $(function() {
   loader();
+  coin();
 });
 
 $(function() {
@@ -34,4 +37,11 @@ function loader() {
       }
     });
   });
+}
+function coin() {
+  $("#likecoin").append(
+    '<div class="likecoin-embed likecoin-button" data-liker-id="ky-mc-minecraft" data-href="' +
+      href +
+      '"></div>'
+  );
 }

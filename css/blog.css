@@ -4,6 +4,3 @@ pre {
   border-radius: 1rem;
   padding: 2rem;
 }
-pre::-webkit-scrollbar-thumb {
-  background-color: whitesmoke;
-}
