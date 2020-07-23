@@ -1,5 +1,4 @@
-location.hash = "";
-const el = "head";
+var ldel = "head";
 $(function() {
   loader();
 });
@@ -17,7 +16,7 @@ function loader() {
       f = v1["file"];
       i = v1["integrity"];
       if (t == "css") {
-        $(el).append(
+        $(ldel).append(
           '<link rel="stylesheet" href="' +
             f +
             '" integrity="' +
@@ -25,7 +24,7 @@ function loader() {
             '" crossorigin="anonymous" preload/>'
         );
       } else if (t == "js") {
-        $(el).append(
+        $(ldel).append(
           '<script src="' +
             f +
             '" integrity="' +
