@@ -1,0 +1,9 @@
+pre {
+  background-color: #282a36;
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+pre::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+}
