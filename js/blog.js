@@ -1,4 +1,4 @@
-var id = document.location.hash;
+var id = document.location.hash.replace("#article", "");
 
 $(function() {
   $.get("articles/" + id + ".md", function(data) {
