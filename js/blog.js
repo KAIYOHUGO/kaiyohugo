@@ -18,33 +18,29 @@ var md = window.markdownit({
 $(function() {
   commentBox("5763964768092160-proj");
   ldart();
-  ldinfo();
 });
 function ldart() {
   $.get(`articles/${id}.md`, function(data) {
     var result = md.render(data);
     $("#article").html(result);
-    btp();
+    btp("#article", ldinfo);
   }).fail(function() {
     document.location.pathname = "/404.html";
   });
 }
 
-function ldinfo() {
-  $.getJSON(`articles/${id}.json`, function(data) {
-    var description = data.description;
-    var title = data.title;
-    $("head").append(`<meta name="description" content="${description}">`);
-    $("title").text(title);
-  }).fail(function() {
-    alert("json err");
-  });
-}
+ldinfo = function(el) {
+  var description = $(`${el} de`).text();
+  var title = $(`${el} h1:first-children`).text();
+  $("head").append(`<meta name="description" content="${description}">`);
+  $("title").text(title);
+};
 //bootstrap
-function btp() {
-  $("img").addClass("img-fluid rounded img-thumbnail mx-auto d-block");
-  $("img").wrap("<picture></picture>");
-  $("img").each(function() {
+btp = function(el, callback) {
+  $(`${el} img`).addClass("img-fluid rounded img-thumbnail mx-auto d-block");
+  $(`${el} img`).wrap("<picture></picture>");
+  $(`${el} picture`).wrap('<div class="col-12"></div>');
+  $(`${el} img`).each(function() {
     var png = $(this)
       .attr("src")
       .replace("png", "webp");
@@ -57,5 +53,6 @@ function btp() {
       var t = jpg;
     }
     $(this).before(`<source srcset="${t}" type="image/webp" />`);
+    callback();
   });
-}
+};
