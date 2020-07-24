@@ -18,19 +18,11 @@ function loader() {
       i = v1["integrity"];
       if (t == "css") {
         $(ldel).append(
-          '<link rel="stylesheet" href="' +
-            f +
-            '" integrity="' +
-            i +
-            '" crossorigin="anonymous" preload/>'
+          `<link rel="stylesheet" href="${f}" integrity="${i}" crossorigin="anonymous" preload/>`
         );
       } else if (t == "js") {
         $(ldel).append(
-          '<script src="' +
-            f +
-            '" integrity="' +
-            i +
-            '"  crossorigin="anonymous" preload></script>'
+          `<script src="${f}" integrity="${i}"  crossorigin="anonymous" preload></script>`
         );
       }
     });

@@ -20,10 +20,15 @@ $(function() {
   $.get("articles/" + id + ".md", function(data) {
     var result = md.render(data);
     $("#article").html(result);
-    $("title").text($("#article > h1:first-child").text());
     btp();
   }).fail(function() {
     document.location.pathname = "/404.html";
+  });
+  $.getJSON("/articles.config.json", function(data) {
+    var description = data.description;
+    var title = data.title;
+    $("head").append(`<meta name="description" content="${description}">`);
+    $("head").text(title);
   });
 });
 
