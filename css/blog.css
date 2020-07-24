@@ -22,6 +22,6 @@ blockquote {
   border-radius: 0.5rem;
   border-width: 0.5rem;
   padding: 0.5rem;
-  border-left: 0.1rem solid #999;
-	padding-left: 1em; }
+  border-left: 0.5rem solid #999;
+  padding-left: 1em; 
 }
