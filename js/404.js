@@ -1,3 +1,3 @@
 $(function() {
-  $("#404").append(document.location.href);
+  $("#404").append(document.location.pathname);
 });
