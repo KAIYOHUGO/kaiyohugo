@@ -36,6 +36,8 @@ function ldinfo() {
     var title = data.title;
     $("head").append(`<meta name="description" content="${description}">`);
     $("title").text(title);
+  }).fail(function() {
+    alert("json err");
   });
 }
 //bootstrap
