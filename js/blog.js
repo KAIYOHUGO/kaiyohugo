@@ -1,4 +1,4 @@
-var id = document.location.hash.replace("#article", "");
+var id = document.location.search.replace("?article", "");
 
 var md = window.markdownit({
   html: true,
