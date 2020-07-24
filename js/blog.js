@@ -16,6 +16,7 @@ var md = window.markdownit({
 
 //load
 $(function() {
+  commentBox("5763964768092160-proj");
   $.get("articles/" + id + ".md", function(data) {
     var result = md.render(data);
     $("#article").html(result);
