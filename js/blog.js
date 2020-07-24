@@ -1,5 +1,5 @@
 var id = document.location.search.replace("?article", "");
-
+el = "#article";
 var md = window.markdownit({
   html: true,
   linkify: false,
@@ -23,20 +23,20 @@ function ldart() {
   $.get(`articles/${id}.md`, function(data) {
     var result = md.render(data);
     $("#article").html(result);
-    btp("#article", ldinfo);
+    btp(ldinfo);
   }).fail(function() {
     document.location.pathname = "/404.html";
   });
 }
 
-ldinfo = function(el) {
+ldinfo = function() {
   var description = $(`${el} de`).text();
   var title = $(`${el} h1:first-children`).text();
   $("head").append(`<meta name="description" content="${description}">`);
   $("title").text(title);
 };
 //bootstrap
-btp = function(el, callback) {
+btp = function(callback) {
   $(`${el} img`).addClass("img-fluid rounded img-thumbnail mx-auto d-block");
   $(`${el} img`).wrap("<picture></picture>");
   $(`${el} picture`).wrap('<div class="col-12"></div>');
