@@ -30,7 +30,7 @@ function ldart() {
 }
 
 ldinfo = function() {
-  var description = $(`${el} de`).text();
+  var description = $(`${el} de`).attr();
   var title = $(`${el}>h1:first-child`).text();
   $("head").append(`<meta name="description" content="${description}">`);
   $("title").text(title);
