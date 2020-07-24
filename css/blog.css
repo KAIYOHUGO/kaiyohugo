@@ -1,0 +1,27 @@
+pre {
+  background-color: #282a36;
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+code {
+  background-color: #282a36;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+pre code {
+  border-radius: 0;
+  padding: 0;
+}
+blockquote {
+  background-color: #f7f7f9;
+  border-color: #282a36;
+  border-radius: 0.5rem;
+  border-width: 0.5rem;
+  padding: 0.5rem;
+  border-left: 0.1rem solid #999;
+	padding-left: 1em; }
+}
