@@ -24,7 +24,7 @@ $(function() {
   }).fail(function() {
     document.location.pathname = "/404.html";
   });
-  $.getJSON("/articles.config.json", function(data) {
+  $.getJSON("articles.config.json", function(data) {
     var description = data.description;
     var title = data.title;
     $("head").append(`<meta name="description" content="${description}">`);
