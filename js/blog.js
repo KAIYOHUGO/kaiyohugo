@@ -28,7 +28,7 @@ $(function() {
     var description = data.description;
     var title = data.title;
     $("head").append(`<meta name="description" content="${description}">`);
-    $("head").text(title);
+    $("title").text(title);
   });
 });
 
