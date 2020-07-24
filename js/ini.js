@@ -2,7 +2,6 @@ var ldel = "head";
 
 $(function() {
   loader();
-  coin();
 });
 
 $(function() {
