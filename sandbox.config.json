@@ -1,4 +1,4 @@
 {
-  "template": "static",
+  "template": "node",
   "infiniteLoopProtection": true
 }
