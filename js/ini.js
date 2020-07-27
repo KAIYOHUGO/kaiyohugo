@@ -28,3 +28,8 @@ function loader() {
     });
   });
 }
+
+var load = function() {
+  $("#main").removeClass("invisible");
+  $("#load").addClass("invisible");
+};
