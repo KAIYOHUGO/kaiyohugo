@@ -23,7 +23,8 @@ function ldart() {
   $.get(`articles/${id}.md`, function(data) {
     var result = md.render(data);
     $("#article").html(result);
-    btp(ldinfo);
+    btp();
+    ldinfo();
   }).fail(function() {
     document.location.pathname = "/404.html";
   });
@@ -37,7 +38,7 @@ ldinfo = function() {
   $("title").text(title);
 };
 //bootstrap
-btp = function(callback) {
+btp = function() {
   $(`${el} img`).addClass("img-fluid rounded img-thumbnail mx-auto d-block");
   $(`${el} img`).wrap("<picture></picture>");
   $(`${el} picture`).wrap('<div class="col-12"></div>');
@@ -54,6 +55,5 @@ btp = function(callback) {
       var t = jpg;
     }
     $(this).before(`<source srcset="${t}" type="image/webp" />`);
-    callback();
   });
 };
