@@ -1,4 +1,4 @@
-var href = document.location.href;
+var href = document.location.href.replace(document.location.hash,"");
 
 //coin
 function coin() {
