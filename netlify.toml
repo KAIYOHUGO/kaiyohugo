@@ -4,7 +4,6 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
 
-[[headers]]
   for = "/404.html"
   [headers.values]
-        status = 404
+    status = 404
