@@ -40,6 +40,7 @@ ldinfo = function() {
 //bootstrap
 btp = function() {
   $(`${el} img`).addClass("img-fluid rounded img-thumbnail mx-auto d-block");
+  $(`${el} img`).attr('"loading="lazy"');
   $(`${el} img`).wrap("<picture></picture>");
   $(`${el} picture`).wrap('<div class="col-12"></div>');
   $(`${el} img`).each(function() {
