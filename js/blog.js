@@ -44,24 +44,23 @@ btp = function() {
   $(`${el} img`).wrap("<picture></picture>");
   $(`${el} picture`).wrap('<div class="col-12"></div>');
   $(`${el} img`).each(function() {
-    (function() {
-      var png = $(this)
-        .attr("src")
-        .replace("png", "webp");
-      var jpg = $(this)
-        .attr("src")
-        .replace("jpg", "webp");
-      if (png > jpg) {
-        var t = png;
-      } else {
-        var t = jpg;
-      }
-      $(this).before(`<source srcset="${t}" type="image/webp" />`);
-    });
-
-    function() {
-      $(this).height();
-      $(this).width();
+    //webp
+    var png = $(this)
+      .attr("src")
+      .replace("png", "webp");
+    var jpg = $(this)
+      .attr("src")
+      .replace("jpg", "webp");
+    if (png > jpg) {
+      var t = png;
+    } else {
+      var t = jpg;
     }
+    $(this).before(`<source srcset="${t}" type="image/webp" />`);
+
+    //testd
+    $(this).height();
+    $(this).width();
+
   });
 };
