@@ -26,7 +26,9 @@ function loader() {
         );
       }
     });
-  });
+  }).fail(function() {
+    loader();
+  })
 }
 
 var load = function() {
