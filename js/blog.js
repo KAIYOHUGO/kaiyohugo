@@ -25,6 +25,7 @@ function ldart() {
     $("#article").html(result);
     btp();
     ldinfo();
+    load();
   }).fail(function() {
     document.location.pathname = "/404.html";
   });
@@ -36,7 +37,7 @@ ldinfo = function() {
   $(`${el} de`).text("");
   $("head").append(`<meta name="description" content="${description}">`);
   $("title").text(title);
-  load();
+
 };
 //bootstrap
 btp = function() {
@@ -62,6 +63,6 @@ btp = function() {
     //testd
     $(this).height();
     $(this).width();
-    load();
+
   });
 };
