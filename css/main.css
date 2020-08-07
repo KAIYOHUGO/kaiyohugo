@@ -31,6 +31,9 @@
 #top {
   padding-top: 2rem;
 }
+img {
+  background-color: gray;
+}
 #main {
   background: black;
   background: linear-gradient(
