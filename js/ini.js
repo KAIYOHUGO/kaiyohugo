@@ -30,8 +30,11 @@ function loader() {
     loader();
   })
 }
-
+var ld_i=0
 var load = function() {
-  $("#main").removeClass("invisible");
-  $("#load").addClass("invisible");
+  if (ld_i==3) {
+    $("#main").removeClass("invisible");
+    $("#load").addClass("invisible");
+  }
+  ld_i++;
 };
