@@ -44,7 +44,7 @@ btp = function() {
   $(`${el} img`).wrap("<picture></picture>");
   $(`${el} picture`).wrap('<div class="col-12"></div>');
   $(`${el} img`).each(function() {
-    function(){
+    function() {
       var png = $(this)
         .attr("src")
         .replace("png", "webp");
@@ -58,6 +58,9 @@ btp = function() {
       }
       $(this).before(`<source srcset="${t}" type="image/webp" />`);
     }
-    
+    function() {
+      $(this).height();
+      $(this).width();
+    }
   });
 };
