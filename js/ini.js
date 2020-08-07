@@ -32,9 +32,10 @@ function loader() {
 }
 var ld_i=0
 var load = function() {
+  ld_i++;
+
   if (ld_i==3) {
     $("#main").removeClass("invisible");
     $("#load").addClass("invisible");
   }
-  ld_i++;
 };
