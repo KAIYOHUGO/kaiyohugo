@@ -1,18 +1,6 @@
 var id = document.location.search.replace("?article", "");
 el = "#article";
-var md = window.markdownit({
-  html: true,
-  linkify: false,
-  typographer: true,
-  highlight: function(str, lang) {
-    if (lang && hljs.getLanguage(lang)) {
-      try {
-        return hljs.highlight(lang, str).value;
-      } catch (__) {}
-    }
-    return "";
-  }
-});
+
 
 //load
 $(function() {
@@ -21,6 +9,19 @@ $(function() {
 });
 function ldart() {
   $.get(`articles/${id}.md`, function(data) {
+    var md = window.markdownit({
+      html: true,
+      linkify: false,
+      typographer: true,
+      highlight: function(str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str).value;
+          } catch (__) {}
+        }
+        return "";
+      }
+    });
     var result = md.render(data);
     $("#article").html(result);
     btp();
