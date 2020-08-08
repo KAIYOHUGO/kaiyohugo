@@ -1,2 +1,1 @@
 load();
-console.log("ld");
