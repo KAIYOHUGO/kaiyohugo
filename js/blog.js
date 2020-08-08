@@ -26,7 +26,6 @@ function ldart() {
     btp();
     ldinfo();
     load();
-    console.log("ldart");
   }).fail(function() {
     document.location.pathname = "/404.html";
   });
