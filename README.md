@@ -1,10 +1,33 @@
-# kaiyohugo
+<div align="center">
 
-HELLO THERE~
 
-i code some.......trash(? :thinking:
+# Hi !👋 I'm KaiyoHugo 🚀
 
-[my site](https://kaiyohugo.functionxyz.eu.org)
+<div>
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="Rust" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Golang" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Typescript" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" height="40" width="40" />
 
-[![kaiyohugo's GitHub stats](https://github-readme-stats.vercel.app/api?username=kaiyohugo&theme=gotham)](https://github.com/KAIYOHUGO)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kaiyohugo&layout=compact&theme=gotham)](https://github.com/KAIYOHUGO)
+<br/>
+
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="Vue" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="Html" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Sass" height="40" width="40" />
+<img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" height="40" width="40" />
+</div>
+</div>
+
+<br/>
+
+```rust
+#[derive(Debug, Clone)]
+struct Dev {
+    nickname: Hugo,
+    current_learning: Rust🦀,
+    editor: Vscode💻<CodeServer>,
+    current_working_on: (Mady🌲, Margo, TsWsmBindgen),
+}
+```
