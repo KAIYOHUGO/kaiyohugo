@@ -31,3 +31,4 @@ struct Dev {
     current_working_on: (MDOJ⚡, Mady🌲, Margo),
 }
 ```
+![](https://wakatime.com/share/@018b677c-491b-487f-843a-068f3eb4badc/f1933e4b-1180-4f81-90dd-947a7b1a78e0.svg)
