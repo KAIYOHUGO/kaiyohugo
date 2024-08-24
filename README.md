@@ -27,7 +27,7 @@
 struct Dev {
     nickname: Hugo,
     current_learning: Rust🦀,
-    editor: Vscode💻<Pop! OS>,
+    editor: Vscode💻<Pop! OS, Cosmic>,
     current_working_on: (MDOJ⚡, Mady🌲, Margo),
 }
 ```
